@@ -1,0 +1,63 @@
+{% extends "base.html"  %}
+{% block content %}
+<!-- close /.header -->
+
+<!-- begin #page - the container for everything but header -->
+<div id="page">
+	<div class="container visible-phone">
+		<p class="right"><a class="btn btn-primary scrollto" href="#secondary-nav">Page Menu &nbsp;<i class="icon-align-justify"></i></a></p>
+	</div>
+
+	<!--close hero-unit-->
+	<div class="container clearfix" id="main-content"> 
+		<!--begin main content-->
+		
+		<div class="row-fluid">
+			<!--begin row-fluid-->
+			<div class="span12 primary-column">
+  				<h2 class="short_headline"><span>Документы организации</span></h2>
+                <p>
+                    Отчетность и регламентирующие документы организации. Для того, что бы пролучить ссылку на скачивание нужного документа нажмите на его название.
+                </p>
+
+            <!--start s-accordion.faq -->
+				<ul class="s-accordion faq fancy">
+
+                    {% for menu_main in menuMain %}
+
+                        <li class="s-wrap">
+                            <h4 class="trigger"><a href="#"> {{ menu_main.1 }} <i class="icon-file-alt"></i></a></h4>
+                            <div class="s-content">
+
+                            {% for menu_item in menuItem %}
+
+                                {% if menu_main.0 == menu_item.1 %}
+                                    <p>
+                                        <a href="{{ menu_item.3 }}">
+                                            {{ menu_item.2 }}
+                                        </a>
+                                    <p>
+                                {% else %}
+                                {% endif %}
+
+                            {% endfor %}
+
+                            </div>
+                            <!--close s-content-->
+                        </li>
+                        <!--close s-wrap-->
+
+                    {% endfor %}
+
+				</ul>
+				<!--close s-accordion.faq -->
+
+			</div>
+			<!--close span9 primary-column-->
+
+		</div>
+		<!--close row-fluid--> 
+	</div>
+	<!--close .container id="main-content" --> 
+	<!--begin footer -->
+{% endblock %}

@@ -1,0 +1,223 @@
+{% extends "base.html"  %}
+{% block content %}
+<!-- close /.header -->
+
+<!-- Основной контент -->
+
+<!-- begin #page - the container for everything but header -->
+<div id="page">
+	<div class="container visible-phone">
+		<p class="right"><a class="btn btn-primary scrollto" href="#secondary-nav">Page Menu &nbsp;<i class="icon-align-justify"></i></a></p>
+	</div>
+
+	<div class="container clearfix" id="main-content">
+   		<h2 class="short_headline"><span>преподаватели</span></h2>
+		<!--begin main content-->
+		
+		<div class="row-fluid">
+			<!--begin row-fluid-->
+			<div class="span12 primary-column">
+				<!--begin primary content-->
+
+                <p>
+                    СПИСОК  ПРЕПОДАВАТЕЛЕЙ
+                    муниципального автономного образовательного учреждения дополнительного образования детей в области культуры Белоярского района «Детская школа искусств г.Белоярский»
+                    по  состоянию  на 01.09.2014 года
+                </p>
+
+                 <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Ф.И.О.</th>
+                                <th>Общий стаж</th>
+                                <th>Педагогический стаж</th>
+                                <th>Категория</th>
+                                <th>Дата присвоения</th>
+                                <th>Образование</th>
+                                <th>Какое учебное заведение окончил(а), когда</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                                </tr>
+
+                                {% for row in inProfessors %}
+
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+
+                                    <td>{{ row.1 }}</td>
+                                    <td>{{ row.2 }}</td>
+                                    <td>{{ row.3 }}</td>
+                                    <td>{{ row.4 }}</td>
+                                    <td>
+
+                                        {% if row.5 != None %}
+                                            {{ row.5 }}
+                                        {% else %}
+                                            -
+                                        {% endif %} {% comment %}Если не присвоена категория, то в поле даты печатаем -{% endcomment %}
+
+                                    </td>
+                                    <td>{{ row.6 }}</td>
+                                    <td>{{ row.7 }}</td>
+                                </tr>
+
+                                {% endfor %}
+
+                          </tbody>
+                          </table>
+
+
+                        <p>
+                            Преподаватели, работающие на условиях внешнего совместительства
+                        </p>
+
+                        <table class="table table-striped table-bordered table-hover">
+                          <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Ф.И.О.</th>
+                                <th>Общий стаж</th>
+                                <th>Педагогический стаж</th>
+                                <th>Категория</th>
+                                <th>Дата присвоения</th>
+                                <th>Образование</th>
+                                <th>Какое учебное заведение окончил(а), когда</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                                <tr>
+                                    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                                </tr>
+
+                                {% for row in dualJobProfessors %}
+
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+
+                                    <td>{{ row.1 }}</td>
+                                    <td>{{ row.2 }}</td>
+                                    <td>{{ row.3 }}</td>
+                                    <td>{{ row.4 }}</td>
+                                    <td>
+
+                                        {% if row.5 != None %}
+                                            {{ row.5 }}
+                                        {% else %}
+                                            -
+                                        {% endif %} {% comment %}Если не присвоена категория, то в поле даты печатаем -{% endcomment %}
+
+                                    </td>
+                                    <td>{{ row.6 }}</td>
+                                    <td>{{ row.7 }}</td>
+                                </tr>
+
+                                {% endfor %}
+
+                          </tbody>
+                          </table>
+                {% comment %}
+                        <p>
+                            <br/>
+                        </p>
+
+                        <table class="table table-striped table-bordered table-hover">
+                          <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Ф.И.О.</th>
+                                <th>Общий стаж</th>
+                                <th>Образование</th>
+                                <th>Категория</th>
+                                <th>Дата присвоения</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                                {% for row in professors2 %}
+
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+
+                                    <td>{{ row.1 }}</td>
+                                    <td>{{ row.2 }}</td>
+                                    <td>{{ row.3 }}</td>
+                                    <td>{{ row.4 }}</td>
+                                    <td>
+
+                                        {% if row.5 != None %}
+                                            {{ row.5 }}
+                                        {% else %}
+                                            -
+                                        {% endif %} {% endcomment %}{% comment %}Если не присвоена категория, то в поле даты печатаем -{% endcomment %}{% comment %}
+
+                                    </td>
+                                </tr>
+
+                                {% endfor %}
+
+                          </tbody>
+                          </table>
+
+                            <p>
+                                <h3>Внешние совместители:</h3>
+                                <ul>
+                                    {% for row in professors3 %}
+                                        <li> {{ row.1 }} </li>
+                                    {% endfor %}
+                                </ul>
+                            </p>
+                {% endcomment %}
+
+                <p>
+                    Дополнительная информация
+                </p>
+
+				<!--start s-accordion.faq -->
+				<ul class="s-accordion faq fancy">
+
+                    {% for menu_main in menuMain %}
+
+                        <li class="s-wrap">
+                            <h4 class="trigger"><a href="#"> {{ menu_main.1 }} <i class="icon-file-alt"></i></a></h4>
+                            <div class="s-content">
+
+                            {% for menu_item in menuItem %}
+
+                                {% if menu_main.0 == menu_item.1 %}
+                                    <p>
+                                        <a href="{{ menu_item.3 }}">
+                                            {{ menu_item.2 }}
+                                        </a>
+                                    <p>
+                                {% else %}
+                                {% endif %}
+
+
+                            {% endfor %}
+
+
+                            </div>
+                            <!--close s-content-->
+                        </li>
+                        <!--close s-wrap-->
+
+                    {% endfor %}
+
+				</ul>
+				<!--close s-accordion.faq -->
+
+
+			</div>
+			<!-- close span12 primary-column-->
+		</div>
+		<!--close row-fluid--> 
+	</div>
+	<!--close .container id="main-content" --> 
+	<!--begin footer -->
+{% endblock %}

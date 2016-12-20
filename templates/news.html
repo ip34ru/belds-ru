@@ -1,0 +1,51 @@
+{% extends "base.html"  %}
+{% block content %}
+<!-- close /.header -->
+
+<!-- begin #page - the container for everything but header -->
+<div id="page">
+
+
+		<div class="container">
+            <h2 class="short_headline"><span>новости</span></h2>
+		</div>
+		<!--close container--> 
+
+	<!--close hero-unit-->
+	
+	<div class="container clearfix" id="main-content"> 
+		<!--begin main content-->
+		<div class="row-fluid">
+			<!--begin row-fluid-->
+            <div class="span1"></div>
+			<div class="span9 blog-summary primary-column">
+
+                   {% for row in result_last10newses %}
+                        {% autoescape on %}
+                            {{ row.1|safe|escape }}
+                            <br>
+                        {% endautoescape %}
+
+                   {% endfor %}
+
+                  <!-- кнопка продолжить чтение -->
+                  <div class="navigation button">
+                        <div class="pull-left"><a href="https://vk.com/beldsi_ru">Продолжить чтение новостей &raquo;</a></div>
+                        <div class="clearfix"></div>
+                  </div>
+				
+
+
+				
+
+			</div>
+			<!-- close .span9 . primary-column .blog-summary-->
+			
+
+		</div>
+		<!--close row-fluid--> 
+	</div>
+	<!--close .container id="main-content" --> 
+	
+	<!--begin footer -->
+{% endblock %}
