@@ -15,14 +15,14 @@ def infoView(request):
     # ВЫБОРКА ПУНКТОВ МЕНЮ
     menu_main = connection.cursor()
     menu_main.execute ("""
-    SELECT * FROM beldsi_base.info_menu_main;
+    SELECT * FROM www__base.info_menu_main;
     """)
     menuMain = menu_main.fetchall()
 
     # ВЫБОРКА ПОД-ПУНКТОВ МЕНЮ
     menu_item = connection.cursor()
     menu_item.execute ("""
-    SELECT * FROM beldsi_base.info_menu_item im
+    SELECT * FROM www__base.info_menu_item im
     ORDER BY im.name
     ;
     """)

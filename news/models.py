@@ -3,7 +3,7 @@ __author__ = 'taksenov'
 
 from django.db import models
 
-# п╒п╟п╠п╩п╦я├п╟ я│ п╫п╬п╡п╬я│я┌я▐п╪п╦ п╦п╥ п╡п╨п╬п╫я┌п╟п╨я┌п╟
+# Таблица с новостями из вконтакта
 class vkwall(models.Model):
     news_text = models.CharField(max_length=5000)
     datetime = models.DateTimeField(auto_now=True, null=True)

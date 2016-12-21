@@ -31,3 +31,4 @@ __pycache__
 /pids
 /servstatic
 /sphinx
+collect_static/

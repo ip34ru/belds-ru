@@ -15,14 +15,14 @@ def docsView(request):
     # ВЫБОРКА ПУНКТОВ МЕНЮ
     menu_main = connection.cursor()
     menu_main.execute ("""
-    SELECT * FROM beldsi_base.docs_menu_main;
+    SELECT * FROM www__base.docs_menu_main;
     """)
     menuMain = menu_main.fetchall()
 
     # ВЫБОРКА ПОД-ПУНКТОВ МЕНЮ
     menu_item = connection.cursor()
     menu_item.execute ("""
-    SELECT * FROM beldsi_base.docs_menu_item dm
+    SELECT * FROM www__base.docs_menu_item dm
     ORDER BY dm.name
     ;
     """)
