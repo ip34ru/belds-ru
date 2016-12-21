@@ -9,7 +9,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 ADMINS = (
-     ('TAksenov', 'taksenov@gmail.com'),
+    ('TAksenov', 'taksenov@gmail.com'),
 )
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
@@ -27,14 +27,11 @@ SECRET_KEY = ')%j71x_*f*@yhggyj59puq@4z7z)^@snm1&gn$0kqn5gr4hrqfl)cf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
-
 MANAGERS = ADMINS
 
-TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-#ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.beldsi.ru', '37.200.65.50']
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.beldsi.ru', '37.200.65.50']
 
 
 # Application definition
@@ -49,8 +46,8 @@ INSTALLED_APPS = (
     'django.contrib.flatpages',
     'django.contrib.sites',
     'professors',
-#    'south',
-#   внешнее приложение для загрузки файлов
+    #    'south',
+    #   внешнее приложение для загрузки файлов
     'filebrowser',
     # документы
     'docs',
@@ -64,6 +61,8 @@ INSTALLED_APPS = (
     'arhiv',
     # анкетирование учреждения
     'blankform',
+
+    'flat_pages',
 )
 
 MIDDLEWARE_CLASSES = [
@@ -102,7 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
-#LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'Asia/Yekaterinburg'
@@ -120,12 +119,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 import os
-TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),)
+
+#TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\', '/'),)
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates') ],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -138,14 +138,13 @@ TEMPLATES = [
     },
 ]
 
-
 SITE_ID = 2
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' 'static/' subdirectories and in STATICFILES_DIRS.
 # Example: '/var/www/example.com/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static') 
+STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static')
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -153,7 +152,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static') ,
+    os.path.join(BASE_DIR, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -161,12 +160,12 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: '/var/www/example.com/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -174,7 +173,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"
 
 
-#TEMPLATE_CONTEXT_PROCESSORS = (
+# TEMPLATE_CONTEXT_PROCESSORS = (
 #    # systems processors
 #    'django.contrib.auth.context_processors.auth',
 #    'django.core.context_processors.debug',
@@ -184,9 +183,9 @@ MEDIA_URL = "/media/"
 #    'django.core.context_processors.tz',
 #    'django.contrib.messages.context_processors.messages',
 
-    # my processors
+# my processors
 
-#)
+# )
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -222,4 +221,3 @@ try:
 
 except ImportError:
     pass
-
