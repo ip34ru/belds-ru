@@ -3,8 +3,14 @@ __author__ = 'taksenov'
 
 from django.db import models
 
-# Таблица с новостями из вконтакта
 class vkwall(models.Model):
     news_text = models.CharField(max_length=5000)
     datetime = models.DateTimeField(auto_now=True, null=True)
+
+    class Meta:
+        verbose_name = 'п²п╬п╡п╬я│я┌я▄ п╦п╥ п▓п '
+        verbose_name_plural = 'п²п╬п╡п╬я│я┌п╦ п╦п╥ п▓п '
+
+    def __str__(self):
+        return self.news_text[:100]
 

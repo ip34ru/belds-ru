@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en" dir="ltr"> <![endif]-->
@@ -15,16 +17,16 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <!-- CSS ================ -->
-<link rel="stylesheet" href="../static/assets/css/bootstrap.min.css" type="text/css"/>
-<link rel="stylesheet" href="../static/assets/css/style.css" type="text/css"/>
-<link rel="stylesheet" href="../static/assets/css/header-1.css" type="text/css"/>
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{% static 'assets/css/header-1.css' %}" type="text/css"/>
 
 {% comment %} ====== custom CSS ===== {% endcomment %}
-<link rel="stylesheet" href="../static/assets/css/main.css" type="text/css"/>
+<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" type="text/css"/>
 
 
 <!-- lemmon slider variable width slider for images -->
-<link rel="stylesheet" href="../static/assets/css/lemmon-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{% static 'assets/css/lemmon-slider.css' %}" type="text/css" media="screen" />
 
 <!-- Icons ================ -->
 <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
@@ -37,18 +39,21 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
 <link rel="shortcut icon" href="../static/img/favicon.png" />
 
+{% block css_extra %}
+    
+{% endblock %}
 <!-- Open Graph for facebook
 http://graph.facebook.com/[UserName] replace [UserName] 
 with yours and get your fb:admis content information where the XXXX goes.
 ================================================== -->
-<meta property="og:title" content="" />
-<meta property="og:type" content="" />
-<meta property="og:url" content="" />
-<meta property="og:image" content=""/>
-<meta property="og:site_name" content="" />
+<meta property="og:title" content="{{ceo.og.title}}" />
+<meta property="og:type" content="{{ceo.og.type}}" />
+<meta property="og:url" content="{{ceo.og.url}}" />
+<meta property="og:image" content="{{ceo.og.}}"/>
+<meta property="og:site_name" content="{{ceo.og.site_name}}" />
 <meta property="fb:admins" content="XXXXX" />
 <meta property="og:locale" content="en_us" />
-<meta property="og:description" content="  " />
+<meta property="og:description" content="{{ceo.og.description}}" />
 
 
 <!-- SCRIPTS ============================================== -->
@@ -65,7 +70,7 @@ with yours and get your fb:admis content information where the XXXX goes.
 		<![endif]-->
 
 <!-- Add to Head after Style sheet http://modernizr.com/docs/#installing  ================ -->
-<script src="../static/assets/js/modernizr.js"></script><!-- js multiple backgrounds svg background size -->
+<script src="{% static 'assets/js/modernizr.js' %}"></script><!-- js multiple backgrounds svg background size -->
 
 <!-- cyrillic font -->
     <style>
@@ -105,7 +110,7 @@ with yours and get your fb:admis content information where the XXXX goes.
 
 <!-- begin .header-->
  <header class="header clearfix">
-     <img src="../static/assets/images/print-logo.png" class="print logo" alt="name of company" />
+     <img src="{% static 'assets/images/print-logo.png'%}" class="print logo" alt="name of company" />
 
 	<div class="container">
 		<div class="mobile-menu-holder"><!--clone menu here for mobile--></div>
@@ -139,7 +144,7 @@ with yours and get your fb:admis content information where the XXXX goes.
 		<!-- close / #main_menu -->
 		
 		<!-- begin #logo -->
-		<div id="logo"> <a href="/"><img alt="" src="../static/assets/images/trans.gif" /><em>Crisp Responsive HTML Retina Ready Bootstrap Goodness</em><!--effing ie7 support--></a> </div>
+		<div id="logo"> <a href="/"><img alt="" src="{% static 'assets/images/trans.gif' %}" /><em>Crisp Responsive HTML Retina Ready Bootstrap Goodness</em><!--effing ie7 support--></a> </div>
 	    <!-- end #logo -->
 		
 	</div>
@@ -178,7 +183,7 @@ with yours and get your fb:admis content information where the XXXX goes.
                 <!-- beldsi 16-01-2014 знак возрастного ограничения 6+ на всех страницах сайта -->
                 <div class="span1">
                     <section>
-                        <img src="../static/assets/images/Age6Plus-64x64.png">
+                        <img src="{% static 'assets/images/Age6Plus-64x64.png' %}">
                     </section>
 				</div>
 				
@@ -207,16 +212,16 @@ with yours and get your fb:admis content information where the XXXX goes.
 <!-- close #page--> 
 
 <!-- JS JQuery ================ --> 
-<script src="../static/assets/js/bootstrap.min.js"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
 
 
-<script src="../static/assets/js/lemmon-slider.min.js"></script><!-- lemmon slider js --> 
+<script src=".{% static 'assets/js/lemmon-slider.min.js' %}"></script><!-- lemmon slider js --> 
 
 <!--initialize scripts / custom scripts all pages--> 
-<script src="../static/assets/js/custom.js"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
 
 {% comment %} скрипт для функционала анкетирования, показывает сколько символов осталось для ввода своего предложения {% endcomment %}
-<script src="../static/assets/js/jquery.tinylimiter.js"></script>
+<script src="{% static 'assets/js/jquery.tinylimiter.js' %}"></script>
 
 
 <!-- Yandex.Metrika counter -->

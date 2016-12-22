@@ -2,7 +2,7 @@ __author__ = 'taksenov'
 # coding=utf-8
 
 # imports
-from django.core.context_processors import csrf
+from django.template.context_processors import csrf
 from django.db import connection
 from django.http import Http404, HttpResponse
 from django.shortcuts import render_to_response, render
