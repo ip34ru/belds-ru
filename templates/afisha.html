@@ -9,11 +9,11 @@
 		<div class="container">
             <h2 class="short_headline"><span>афиша</span></h2>
 		</div>
-		<!--close container--> 
+		<!--close container-->
 
 	<!--close hero-unit-->
-	
-	<div class="container clearfix" id="main-content"> 
+
+	<div class="container clearfix" id="main-content">
 		<!--begin main content-->
 		<div class="row-fluid">
 			<!--begin row-fluid-->
@@ -29,23 +29,16 @@
                    {% endfor %}
 
                   <!-- кнопка продолжить чтение -->
-                  <div class="navigation button">
-                        <div class="pull-left"><a href="https://vk.com/beldsi_ru">Продолжить чтение новостей &raquo;</a></div>
-                        <div class="clearfix"></div>
-                  </div>
-				
-
-
-				
+                  {% include 'vkreadmore.html' %}
 
 			</div>
 			<!-- close .span9 . primary-column .blog-summary-->
-			
+
 
 		</div>
-		<!--close row-fluid--> 
+		<!--close row-fluid-->
 	</div>
-	<!--close .container id="main-content" --> 
-	
+	<!--close .container id="main-content" -->
+
 	<!--begin footer -->
 {% endblock %}

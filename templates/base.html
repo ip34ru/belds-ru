@@ -8,7 +8,7 @@
 
 <head>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-<title>Детская школа искусств г. Белоярский</title>
+<title>МАУ "Дворец спорта" г. Белоярский</title>
 
 <!-- Meta Data ================ -->
 <meta charset="UTF-8" />
@@ -40,10 +40,10 @@
 <link rel="shortcut icon" href="../static/img/favicon.png" />
 
 {% block css_extra %}
-    
+
 {% endblock %}
 <!-- Open Graph for facebook
-http://graph.facebook.com/[UserName] replace [UserName] 
+http://graph.facebook.com/[UserName] replace [UserName]
 with yours and get your fb:admis content information where the XXXX goes.
 ================================================== -->
 <meta property="og:title" content="{{ceo.og.title}}" />
@@ -57,8 +57,8 @@ with yours and get your fb:admis content information where the XXXX goes.
 
 
 <!-- SCRIPTS ============================================== -->
-		<!--	NOTE:: jquery 1.9.1 supports older ie, 2.0 does not, but 1.9.1 does not work well on ie8 and 
-				lower so version 1.7.2 is called for older versions of ie 
+		<!--	NOTE:: jquery 1.9.1 supports older ie, 2.0 does not, but 1.9.1 does not work well on ie8 and
+				lower so version 1.7.2 is called for older versions of ie
 				:: calling jQuery in the head for ajax work if necessary.
 				-->
 		<!--[if gt IE 8]><!-->
@@ -88,23 +88,16 @@ with yours and get your fb:admis content information where the XXXX goes.
 	<li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to navigation</a></li>
 	<li><a href="#page" title="Skip to content" accesskey="c">Skip to content</a></li>
 </ul>
-<!-- end /.visuallyhidden accesibility--> 
+<!-- end /.visuallyhidden accesibility-->
 
 <!-- mobile navigation trigger-->
 <h5 class="mobile_nav"><a href="javascript:void(0)">&nbsp;<span></span></a></h5>
 <!--end mobile navigation trigger-->
 
-<section class="container preheader"> 
-	
-{% comment %}	<div class="search-wrapper">
-		<form class="search" method="post" action="someaction.php">
-			<div id="search-trigger">Search:</div>
-			<input id="search-box" type="text" placeholder="search + enter">
-		</form>
-	</div>{% endcomment %}
+<section class="container preheader">
 	<div class="phone"><a href="tel:83467021647" class="tele">8(34670)21647</a></div>
 	<ul class="social">
-		<li><a class="socicon small vk" href="https://vk.com/beldsi_ru" data-placement="bottom" title="Наша группа ВКонтакте"></a></li>
+		<li><a class="socicon small vk" href="https://vk.com/club135765644" data-placement="bottom" title="Наша группа ВКонтакте"></a></li>
 	</ul>
 </section>
 
@@ -118,60 +111,49 @@ with yours and get your fb:admis content information where the XXXX goes.
 		<nav id="main_menu">
 			<ul class="primary_menu">
 				<li ><a href="/">Главная</a></li>
-				<li class="parent"><a href="javascript:void(0)">Структура<i></i></a>
-					<ul>
-						<li><a href="/music/">Музыкальное отделение</a></li>
-						<li><a href="/art/">Художественное отделение</a></li>
-						<li><a href="/management/">Администрация</a></li>
-						<li><a href="/professors/">Преподаватели</a></li>
-					</ul>
-				</li>
-
+				<li ><a href="/structure/">Структура</a></li>
                 <li><a href="/docs/">Документы</a></li>
                 <li><a href="/info/">Информация</a></li>
                 <li><a href="/contact/">Контакты</a></li>
-				<li><a href="/gallery/">Фотогалерея</a></li>
-				<li><a href="/blankform/">Опрос</a></li>
                 <li class="parent"><a href="javascript:void(0)">События<i></i></a>
 					<ul>
 						<li><a href="/afisha/">Афиша</a></li>
 						<li><a href="/news/">Новости</a></li>
-						<li><a href="/arhiv/">Архив</a></li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
 		<!-- close / #main_menu -->
-		
+
 		<!-- begin #logo -->
-		<div id="logo"> <a href="/"><img alt="" src="{% static 'assets/images/trans.gif' %}" /><em>Crisp Responsive HTML Retina Ready Bootstrap Goodness</em><!--effing ie7 support--></a> </div>
+		<div id="logo"> <a href="/"><img alt="" src="{% static 'assets/images/print-logo.png' %}" /><em>Crisp Responsive HTML Retina Ready Bootstrap Goodness</em><!--effing ie7 support--></a> </div>
 	    <!-- end #logo -->
-		
+
 	</div>
 
-	<!-- close / .container--> 
+	<!-- close / .container-->
 </header>
 <!-- close /.header -->
 
 
-    <!-- Основной контент ------------------------------------------------------------------------------------------ -->
+    <!-- Основной контент  -->
 
     {% block content %}{% endblock %}
 
-	<!-- Конец. Основной контент ----------------------------------------------------------------------------------- -->
+	<!-- Конец. Основной контент  -->
 
     <!--begin footer -->
 	<footer id="footer" class="clearfix">
 		<div class="container"><!--footer container-->
-			
-			
+
+
 			<div class="row-fluid">
 				<div class="span11">
 
 					<section>
 						<h4>Мы в социальных сетях:</h4>
 						<ul class="social">
-							<li><a class="socicon vk" href="https://vk.com/beldsi_ru" title="ВКонтакте"></a></li>
+							<li><a class="socicon vk" href="https://vk.com/club135765644" title="ВКонтакте"></a></li>
 
 						</ul>
 					</section>
@@ -186,43 +168,39 @@ with yours and get your fb:admis content information where the XXXX goes.
                         <img src="{% static 'assets/images/Age6Plus-64x64.png' %}">
                     </section>
 				</div>
-				
+
 
 			</div>
-			<!-- close .row-fluid--> 
+			<!-- close .row-fluid-->
 		</div>
-		<!-- close footer .container--> 
-		
+		<!-- close footer .container-->
+
 		<!--change this to your stuff-->
 		<section class="footerCredits">
 			<div class="container">
 				<ul class="clearfix">
-					<li>© 2014 МАОУДОД «Детская школа искусств г.Белоярский».</li>
+					<li>© 2016 МАУ «Дворец спорта» г.Белоярский</li>
   					<li><a href="/sitemap/">Карта сайта</a></li>
-                    <li><a href="http://ip34.ru/">Разработка и поддержка сайта &mdash; ip34.ru</a></li>
+                    <li><a href="http://ip34.ru/">Разработка сайта &mdash; ip34.ru</a></li>
 				</ul>
 			</div>
-			<!--footerCredits container--> 
+			<!--footerCredits container-->
 		</section>
-		<!--close section--> 
+		<!--close section-->
 	</footer>
-	<!--/.footer--> 
-	
-	<span class="backToTop"><a href="#top">back to top</a></span> </div>
-<!-- close #page--> 
+	<!--/.footer-->
 
-<!-- JS JQuery ================ --> 
+	<span class="backToTop"><a href="#top">back to top</a></span> </div>
+<!-- close #page-->
+
+<!-- JS JQuery ================ -->
 <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
 
 
-<script src=".{% static 'assets/js/lemmon-slider.min.js' %}"></script><!-- lemmon slider js --> 
+<script src=".{% static 'assets/js/lemmon-slider.min.js' %}"></script><!-- lemmon slider js -->
 
-<!--initialize scripts / custom scripts all pages--> 
+<!--initialize scripts / custom scripts all pages-->
 <script src="{% static 'assets/js/custom.js' %}"></script>
-
-{% comment %} скрипт для функционала анкетирования, показывает сколько символов осталось для ввода своего предложения {% endcomment %}
-<script src="{% static 'assets/js/jquery.tinylimiter.js' %}"></script>
-
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">

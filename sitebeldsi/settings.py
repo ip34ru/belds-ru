@@ -35,6 +35,7 @@ INSTALLED_APPS = (
     'arhiv',
     'blankform',
     'flat_pages',
+    'structure',
 )
 
 MIDDLEWARE_CLASSES = [
@@ -84,13 +85,13 @@ STATIC_URL = '/static/'
 
 DATABASES = {
     'default': {
-        'ENGINE':   'django.db.backends.sqlite3', 
-        'NAME':     os.path.join(BASE_DIR, 'db.sqlite3'),                      
-       
+        'ENGINE':   'django.db.backends.sqlite3',
+        'NAME':     os.path.join(BASE_DIR, 'db.sqlite3'),
+
         'USER':     '',
         'PASSWORD': '',
-        'HOST':     '',                    
-        'PORT':     '',                  
+        'HOST':     '',
+        'PORT':     '',
     }
 }
 
@@ -125,7 +126,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    
+
 )
 
 

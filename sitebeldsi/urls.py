@@ -8,6 +8,7 @@ from docs.views import docsView
 from django.conf.urls import patterns, include, url
 
 from info.views import InfoDocumentsList
+from structure.views import StructureDocumentsList
 from news.views import newsView
 from professors.views import professorsView
 from flat_pages.views import  FlatPageIndex, FlatPageView
@@ -27,7 +28,7 @@ urlpatterns = (
     url(r'^grappelli/', include('grappelli.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
-urlpatterns += ( 
+urlpatterns += (
 # Свои приложения: ------------------------------------------
     # Professors ------
     url(r'^professors/', professorsView),
@@ -37,6 +38,7 @@ urlpatterns += (
     # -----------------
     # info ------------
     url(r'^info/', InfoDocumentsList.as_view()),
+    url(r'^structure/', StructureDocumentsList.as_view()),
     # -----------------
     # news ------------
     url(r'^news/', newsView),
@@ -52,5 +54,4 @@ urlpatterns += (
     url(r'commentform/', comment),
     #-----------------------------
     url(r'^(?P<url>.*/)$', FlatPageView.as_view()),
-) 
-
+)
