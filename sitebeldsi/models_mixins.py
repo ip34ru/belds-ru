@@ -10,4 +10,4 @@ class DocumentMixin(models.Model):
 
     @property
     def link(self):
-        return self.document.url
+        return self.document.url if self.document else '#'
