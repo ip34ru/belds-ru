@@ -7,7 +7,7 @@ from docs.views import docsView
 
 from django.conf.urls import patterns, include, url
 
-from info.views import infoView
+from info.views import InfoDocumentsList
 from news.views import newsView
 from professors.views import professorsView
 from flat_pages.views import  FlatPageIndex, FlatPageView
@@ -36,7 +36,7 @@ urlpatterns += (
     url(r'^docs/', docsView),
     # -----------------
     # info ------------
-    url(r'^info/', infoView),
+    url(r'^info/', InfoDocumentsList.as_view()),
     # -----------------
     # news ------------
     url(r'^news/', newsView),
