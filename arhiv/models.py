@@ -2,7 +2,7 @@
 __author__ = 'taksenov'
 
 from django.db import models
-
+from sitebeldsi.models_mixins import DocumentMixin
 
 # таблица с названиями пунктов меню
 class menu_main(models.Model):
@@ -19,10 +19,9 @@ class menu_main(models.Model):
 
 
 # таблица с элементами из пунктов меню
-class menu_item(models.Model):
+class menu_item(DocumentMixin, models.Model):
     caption = models.ForeignKey('menu_main')
     name = models.CharField(max_length=1024)
-    link = models.CharField(max_length=1024)
 
     class Meta:
         verbose_name = 'Элемент меню'

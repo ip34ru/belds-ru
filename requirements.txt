@@ -1,4 +1,5 @@
 Django==1.9
 django-filebrowser==3.7.2
+-e git+https://github.com/sehmaschine/django-grappelli.git@d6256e7ed7d9771e2b56c6d363715496c1fc7551#egg=django_grappelli
 gunicorn==19.6.0
 Pillow==3.4.2

@@ -18,6 +18,8 @@ MANAGERS = ADMINS
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
+    'grappelli',
+    'filebrowser',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -26,7 +28,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'professors',
-    'filebrowser',
     'docs',
     'info',
     'news',
@@ -50,6 +51,7 @@ MIDDLEWARE_CLASSES = [
 ROOT_URLCONF = 'sitebeldsi.urls'
 
 WSGI_APPLICATION = 'sitebeldsi.wsgi.application'
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -131,6 +133,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = "/media/"
 
+FILEBROWSER_DIRECTORY = 'documents/'
 
 ADMIN_SITE_TITLE = 'Дворец спорта | Администрирование'
 

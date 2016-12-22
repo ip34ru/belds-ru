@@ -3,7 +3,7 @@ __author__ = 'taksenov'
 
 from django.db import models
 from django.core.urlresolvers import reverse_lazy
-
+from sitebeldsi.models_mixins import DocumentMixin
 # Таблица с преподавателями (основными)
 class professors(models.Model):
     fio = models.CharField(max_length=150)
@@ -45,10 +45,9 @@ class menu_main(models.Model):
         return self.caption
 
 # таблица с элементами из пунктов меню
-class menu_item(models.Model):
+class menu_item(DocumentMixin, models.Model):
     caption = models.ForeignKey('menu_main')
     name = models.CharField(max_length=1024)
-    link = models.CharField(max_length=1024)
 
     def __unicode__(self):
         return self.name
