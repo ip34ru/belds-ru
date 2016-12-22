@@ -10,7 +10,6 @@
 /temp
 /static/SQLs/
 /media/
-migrations/
 *.sqlite3
 local_settings.py
 __pycache__
