@@ -1,0 +1,28 @@
+version: '2'
+services:
+  db:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=poi4vtyz
+      - MYSQL_DATABASE=www__base
+      - MYSQL_USER=qduser
+      - MYSQL_PASSWORD=poi4vtyz
+
+    volumes:
+      - ../dbdata:/var/lib/mysql
+    expose:
+     - 3306
+  web:
+    build: .
+    expose:
+     - 8000
+    volumes:
+     - ../media:/usr/src/app/media
+     - ../static:/usr/src/app/static_root
+     - ../logs:/usr/src/app/logs
+    ports:
+     - "127.0.0.1:8001:8000"
+    links:
+     - "db:mysql"
+    depends_on:
+     - db

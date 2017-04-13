@@ -2,7 +2,7 @@
 __author__ = 'taksenov'
 
 from django.contrib import admin
-from info.models import *
+from .models import *
 
 
 admin.site.register(menu_main)
