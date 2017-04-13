@@ -9,6 +9,7 @@ from django.conf.urls import patterns, include, url
 
 from info.views import InfoDocumentsList
 from structure.views import StructureDocumentsList
+from gto.views import GtoDocumentsList
 from news.views import newsView
 from professors.views import professorsView
 from flat_pages.views import  FlatPageIndex, FlatPageView
@@ -39,6 +40,7 @@ urlpatterns += (
     # info ------------
     url(r'^info/', InfoDocumentsList.as_view()),
     url(r'^structure/', StructureDocumentsList.as_view()),
+    url(r'^gto/', GtoDocumentsList.as_view()),
     # -----------------
     # news ------------
     url(r'^news/', newsView),
