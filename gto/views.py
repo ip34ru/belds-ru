@@ -15,7 +15,7 @@ class GtoDocumentsList(TemplateView):
     template_name = 'gto.html'
 
     def get_context_data(self, **kwargs):
-        context = super(StructureDocumentsList, self).get_context_data(**kwargs)
+        context = super(GtoDocumentsList, self).get_context_data(**kwargs)
         context['menuMain'] = menu_main.objects.all()
         context['menuItem'] = menu_item.objects.all()
         return context
