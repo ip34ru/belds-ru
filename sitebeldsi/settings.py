@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'blankform',
     'flat_pages',
     'structure',
+    'gto'
 )
 
 MIDDLEWARE_CLASSES = [
