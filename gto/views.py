@@ -11,11 +11,11 @@ from django.template import Context, RequestContext
 from django.views.generic import DetailView, TemplateView
 from .models import menu_main, menu_item
 
-class StructureDocumentsList(TemplateView):
+class GtoDocumentsList(TemplateView):
     template_name = 'gto.html'
 
     def get_context_data(self, **kwargs):
-        context = super(StructureDocumentsList, self).get_context_data(**kwargs)
+        context = super(GtoDocumentsList, self).get_context_data(**kwargs)
         context['menuMain'] = menu_main.objects.all()
         context['menuItem'] = menu_item.objects.all()
         return context
