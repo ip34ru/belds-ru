@@ -539,7 +539,7 @@ input[type="text"], input[type="password"], input[type="search"], input[type="em
     height: 50px;
     text-indent: -9999px;
     display: block;
-    background: #4c5966 url(../images/sliderarrows.png) -80px 50% no-repeat;
+    background: #007dff url(../images/sliderarrows.png) -80px 50% no-repeat;
 }
 .image-slider.flexslider .flex-direction-nav .flex-prev {
     right: auto;
@@ -845,7 +845,7 @@ a.thumbnail:hover {
 ================================================== */
 #footer {
     clear: both;
-    background: #4c5966;
+    background: #007dff;
     border-top: 3px solid #6d767e;
     padding: 2% 0 0 0; /* added */
 }
@@ -1173,7 +1173,7 @@ ul.image-widget {
     text-align: left;
 }
 .rotating-testimonials .tabs li {
-    background: #4c5966;
+    background: #007dff;
     border: none;
     display: inline-block;
     *display: inline;

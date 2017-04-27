@@ -52,7 +52,7 @@
 	display:inline-block;
 	*zoom:1;
 	*display:inline;
-	border-bottom: 1px solid #4C5966;
+	border-bottom: 1px solid #007dff;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform:    rotate(-90deg);
 	-ms-transform:     rotate(-90deg);
@@ -67,7 +67,7 @@
 	font-size: 120%;
 	font-weight: bold;
 	color: white;
-	background: #4C5966;
+	background: #007dff;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	-moz-border-radius: 50%;

@@ -66,7 +66,7 @@ body.tall-logo nav.user {
 	position: relative;
 	clear: both;
 	padding: 0;
-	background: #4c5966;
+	background: #007dff;
 	/*ie 7*/
 	z-index: 999;
 }
@@ -272,7 +272,7 @@ body.tall-logo nav.user {
 	margin: 0 0 0 2px;
 	padding: 0;
 	position: relative;
-	background: #4c5966;
+	background: #007dff;
 	text-transform: lowercase;
 }
 
@@ -589,7 +589,7 @@ body.tall-logo nav.user {
 	
 	.primary_menu {
 		margin: 0;
-		background: #4c5966;
+		background: #007dff;
 		padding: 10px 0;
 	}
 	
@@ -617,7 +617,7 @@ body.tall-logo nav.user {
 		height: auto;
 		width: auto;
 		line-height: auto;
-		background: #4c5966;
+		background: #007dff;
 		padding: 8px 0 5px 20px;
 	}
 	

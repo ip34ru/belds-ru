@@ -56,7 +56,7 @@ nav.user a:hover {
 	clear: both;
 	padding: 0;
 	height: 95px;
-	background: #4c5966;
+	background: #007dff;
 	border-bottom: 45px solid #c7cfd6;
 	/*ie 7*/
 	z-index: 999;
@@ -258,7 +258,7 @@ nav.user a:hover {
 
 .primary_menu li a {
 	border: none;
-	color: #4c5966;
+	color: #007dff;
 	display: block;
 	margin: 0!important;
 	padding: 0 12px;
@@ -301,7 +301,7 @@ nav.user a:hover {
 	background-color: #53a3b7;
 }
 .primary_menu li ul li {
-	background: #4c5966;
+	background: #007dff;
 	float: none;
 	left: auto;
 	margin: 0;
@@ -610,7 +610,7 @@ nav.user a:hover {
 		height: auto;
 		width: auto;
 		line-height: auto;
-		background: #4c5966;
+		background: #007dff;
 		padding: 8px 0 5px 20px;
 	}
 	
