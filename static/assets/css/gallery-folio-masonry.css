@@ -126,7 +126,7 @@ ul.sort li.last:after { content:"" }
 
 .sort li a:hover,
 .sort a.active {
-    color: #53a3b7;
+    color: #00A0E1;
     background: none;
 }
 

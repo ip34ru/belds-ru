@@ -103,7 +103,7 @@
     text-indent: -9999px;
     display: block;
     opacity: .8;
-    background: #6d767e url(../images/sliderarrows.png) -80px 50% no-repeat;
+    background: #007DFF url(../images/sliderarrows.png) -80px 50% no-repeat;
 }
 .next-page { border-left: 3px solid #fff }
 .prev-page {

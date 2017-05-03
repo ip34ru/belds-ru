@@ -173,8 +173,8 @@ li.st-content-wrapper .st-content{
 	-moz-border-radius:5px;
 	border-radius: 5px;
 }
-.sidebar-tabs .tab a:hover {background:#758694;color:#fff;}
-.sidebar-tabs .tab a.active  {background:#758694;color:#fff;}
+.sidebar-tabs .tab a:hover {background:#007DFF;color:#fff;}
+.sidebar-tabs .tab a.active  {background:#007DFF;color:#fff;}
 .sidebar-tabs .panels {clear:both;position:relative;padding:10px 0;margin:0}
 
 
@@ -192,8 +192,8 @@ background-image:url(../images/7p.png);
 	-moz-border-radius: 8px 8px 0 0;
 	border-radius: 8px 8px 0 0;
 }
-.content-tabs .tab a:hover {background:#758694;color:#fff;}
-.content-tabs .tab a.active  {background:#758694;color:#fff;}
+.content-tabs .tab a:hover {background:#007DFF;color:#fff;}
+.content-tabs .tab a.active  {background:#007DFF;color:#fff;}
 .content-tabs .panels {clear:both;position:relative;padding:2% 3%;border:1px solid #d8dfe5;border-bottom:5px solid #c7cfd6}
 
 

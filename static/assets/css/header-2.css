@@ -15,11 +15,11 @@ nav.user a {
 	float: left;
 	padding: 0 5px;
 	margin-right: 5px;
-	color: #758694;
+	color: #007DFF;
 }
 
 nav.user a:hover {
-	color: #53a3b7;
+	color: #00A0E1;
 }
 
 /* header / logo (desktop)
@@ -138,7 +138,7 @@ nav.user a:hover {
 }
 
 .preheader .phone a, .preheader .phone {
-	color: #758694;
+	color: #007DFF;
 }
 
 .preheader .social {
@@ -157,7 +157,7 @@ nav.user a:hover {
 }
 
 .preheader .social a {
-	color: #758694;
+	color: #007DFF;
 	top: 2px;  
 	position: relative;
 	text-decoration: none;
@@ -284,10 +284,10 @@ nav.user a:hover {
 .primary_menu ul li a:hover,
 .primary_menu ul li a:focus,
 .primary_menu ul .active > a,
-.primary_menu ul a.selected { color: #fff;background:#53a3b7;}
+.primary_menu ul a.selected { color: #fff;background:#00A0E1;}
 
 .primary_menu li.active ul li.active a, .primary_menu li ul a:hover {
-	background-color: #53a3b7;
+	background-color: #00A0E1;
 }
 
 .primary_menu li ul li a, .lt-ie9 .primary_menu li ul li a {
@@ -298,7 +298,7 @@ nav.user a:hover {
 	*background-color: transparent;
 }
 .primary_menuli.active ul li.active a {
-	background-color: #53a3b7;
+	background-color: #00A0E1;
 }
 .primary_menu li ul li {
 	background: #007dff;
@@ -309,7 +309,7 @@ nav.user a:hover {
 	width: 100%;
 }
 .primary_menu li li {
-	border-bottom: 1px solid #758694;
+	border-bottom: 1px solid #007DFF;
 }
 .primary_menu li ul a,
 .primary_menu li ul li a,
@@ -321,7 +321,7 @@ nav.user a:hover {
 	color: #fff;
 }
 .primary_menu li ul {
-	background: #6d767e;
+	background: #007DFF;
 	left: 0;
 	padding: 0;
 	position: absolute;
@@ -534,7 +534,7 @@ nav.user a:hover {
 		left: 5px;
 		height: 40px;
 		width: 40px;
-		background: #53a3b7;
+		background: #00A0E1;
 		z-index: 1;
 	}
 	

@@ -97,7 +97,7 @@
 	border: none;
     text-indent: -9999px;
     display: block;
-    background: #758694 url(../images/sliderarrows.png) -280px 50% no-repeat;
+    background: #007DFF url(../images/sliderarrows.png) -280px 50% no-repeat;
 }
 .portfolio-detail #slider .flex-direction-nav .flex-prev {
 	top: 25px;
@@ -183,7 +183,7 @@
     height: 50px;
     text-indent: -9999px;
     display: block;
-    background: #758694 url(../images/sliderarrows.png) -80px 50% no-repeat;
+    background: #007DFF url(../images/sliderarrows.png) -80px 50% no-repeat;
 }
 .portfolio-detail #slider .flex-direction-nav .flex-prev {
     right: auto;

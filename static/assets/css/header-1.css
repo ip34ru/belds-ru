@@ -16,11 +16,11 @@ nav.user a {
 	float: left;
 	padding: 0 5px;
 	margin-right: 5px;
-	color: #758694;
+	color: #007DFF;
 }
 
 nav.user a:hover {
-	color: #53a3b7;
+	color: #00A0E1;
 }
 
 body.tall-logo nav.user {
@@ -164,7 +164,7 @@ body.tall-logo nav.user {
 }
 
 .preheader .phone a, .preheader .phone {
-	color: #758694;
+	color: #007DFF;
 }
 
 .preheader .social {
@@ -183,7 +183,7 @@ body.tall-logo nav.user {
 }
 
 .preheader .social a {
-	color: #758694;
+	color: #007DFF;
 	top: 2px;  
 	position: relative;
 	text-decoration: none;
@@ -204,14 +204,14 @@ body.tall-logo nav.user {
 .primary_menu > li > a:hover,
 .primary_menu > li > a:focus,
 .primary_menu > .active > a,
-.primary_menu > li > a.selected { color: #fff; background: #53a3b7;}
+.primary_menu > li > a.selected { color: #fff; background: #00A0E1;}
 
 /* colors second level */
 .primary_menu ul li a:hover,
 .primary_menu ul li a:focus,
 .primary_menu ul .active > a,
 .primary_menu ul a.selected,
-.primary_menu .parent > .active { color: #fff;background:#53a3b7;}
+.primary_menu .parent > .active { color: #fff;background:#00A0E1;}
 
 
 /* hide trigger for desktop */
@@ -293,7 +293,7 @@ body.tall-logo nav.user {
 }
 
 .primary_menu li ul li {
-	background: #758694;
+	background: #007DFF;
 	float: none;
 	left: auto;
 	margin: 0;
@@ -302,7 +302,7 @@ body.tall-logo nav.user {
 }
 
 .primary_menu li ul li ul li {
-	background: #758694;
+	background: #007DFF;
 }
 
 .primary_menu li li {
@@ -320,7 +320,7 @@ body.tall-logo nav.user {
 }
 
 .primary_menu li ul {
-	background: #6d767e;
+	background: #007DFF;
 	left: 0;
 	padding: 0;
 	position: absolute;
@@ -546,7 +546,7 @@ body.tall-logo nav.user {
 		left: 5px;
 		height: 40px;
 		width: 40px;
-		background: #53a3b7;
+		background: #00A0E1;
 		z-index: 1;
 	}
 	

@@ -3,7 +3,7 @@
 
 .dropdown-menu > li > a:hover, 
 .dropdown-menu > li.active > a, 
-.dropdown-menu > li.active > a:hover {background:#53a3b7;}
+.dropdown-menu > li.active > a:hover {background:#00A0E1;}
 
 input.focused {
 		border-color: rgba(82, 168, 236, 0.8);
@@ -31,18 +31,18 @@ input.focused {
 		border-top: 4px solid #fff;
 }
 .nav-collapse .nav > li > a,  .nav-collapse .dropdown-menu a {
-		color: #758694;
+		color: #007DFF;
 }
 .navbar .nav > li > a {
-		color: #758694;
+		color: #007DFF;
 }
 .navbar .nav li.dropdown > a:hover .caret {
-		border-top-color: #758694;
-		border-bottom-color: #758694;
+		border-top-color: #007DFF;
+		border-bottom-color: #007DFF;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-		border-top-color: #758694;
-		border-bottom-color: #758694;
+		border-top-color: #007DFF;
+		border-bottom-color: #007DFF;
 }
 .btn {
 		cursor: pointer;
@@ -68,8 +68,8 @@ input.focused {
 }
 .btn-primary {
 		color: #fff;
-		background: #53a3b7;
-		border-color: #53a3b7;
+		background: #00A0E1;
+		border-color: #00A0E1;
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
 		color: #fff;
@@ -184,7 +184,7 @@ input.focused {
 		text-shadow:none
 }
 .navbar .brand {
-		color: #758694;
+		color: #007DFF;
 }
 .navbar .brand:hover {
 		text-decoration: none;
@@ -205,7 +205,7 @@ input.focused {
 		border-right: 1px solid transparent;
 }
 .navbar-inverse .divider-vertical {
-		border-left-color: #758694;
+		border-left-color: #007DFF;
 		border-right-color: transparent;
 }
 
@@ -280,7 +280,7 @@ input.focused {
 }
 .nav-list > .active > a, .nav-list > .active > a:hover {
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-		background-color: #53a3b7;
+		background-color: #00A0E1;
 		background-image:transparent;
 }
 .dropdown-menu a {
@@ -476,7 +476,7 @@ label.error {
 }
 .pager a {
 		text-decoration: none;
-		color: #758694;
+		color: #007DFF;
 }
 .pager .disabled>a, .pager .disabled>a:hover, .pager .disabled>span {
 		color: #c7cfd6;

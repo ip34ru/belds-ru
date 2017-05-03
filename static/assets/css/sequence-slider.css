@@ -112,7 +112,7 @@ BACKGROUND IMAGES USE MOBILE FIRST AND THEN A FALL BACK FOR OLDER IE - smaller i
     font-size: 30px;
     line-height: 50px;
     color: #fff;
-    background: #53A3B7;
+    background: #00A0E1;
     text-align: center;
 }
 .sequence-theme .sequence-prev {
@@ -171,7 +171,7 @@ BACKGROUND IMAGES USE MOBILE FIRST AND THEN A FALL BACK FOR OLDER IE - smaller i
 }
 .sequence-pagination li a:hover { background: #000 }
 .sequence-pagination li.current a {
-    background: #53A3B7;
+    background: #00A0E1;
     cursor: default;
 }
 .lt-ie8 .sequence-pagination {
@@ -215,10 +215,10 @@ BACKGROUND IMAGES USE MOBILE FIRST AND THEN A FALL BACK FOR OLDER IE - smaller i
 }
 
 .sequence-theme .caption h2 span {
-	-moz-box-shadow:  0px 0px 0px 8px #53A3B7;
-	-webkit-box-shadow:  0px 0px 0px 8px #53A3B7;
-	box-shadow:  0px 0px 0px 8px #53A3B7;
-	background:#53A3B7;
+	-moz-box-shadow:  0px 0px 0px 8px #00A0E1;
+	-webkit-box-shadow:  0px 0px 0px 8px #00A0E1;
+	box-shadow:  0px 0px 0px 8px #00A0E1;
+	background:#00A0E1;
 	line-height:1.7;
 }
 

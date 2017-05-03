@@ -11,7 +11,7 @@
 /** equalHero typography **/
 .equalHero h3 a,
 .equalHero h4 a,
-.equalHero h2 a { text-decoration: none;color:#53a3b7 }
+.equalHero h2 a { text-decoration: none;color:#00A0E1 }
 .equalHero h2,
 .equalHero h3,
 .equalHero h4,
@@ -227,7 +227,7 @@ margin-left:10px;
     opacity: 1;
 }
 .thumb-gallery a,
-.thumb-gallery a h4 { color: #6d767e!important }
+.thumb-gallery a h4 { color: #007DFF!important }
 .thumb-gallery ul li h4 {
     margin: 0;
     padding: 0;
