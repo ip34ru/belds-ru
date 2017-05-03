@@ -20,8 +20,8 @@
     border-radius: 60px;
     line-height: 1;
     padding-top: 13px;
-    -webkit-box-shadow: inset 2px 2px 0px 0px #a3b0bb;
-    box-shadow: inset 2px 2px 0px 0px #a3b0bb;
+    -webkit-box-shadow: inset 2px 2px 0px 0px #83B6FB;
+    box-shadow: inset 2px 2px 0px 0px #83B6FB;
 }
 .blog.date * { display: block }
 .blog.date .day {
@@ -150,14 +150,14 @@
 .blog-summary-grid .entry-meta {
     padding-top: 8px;
     font-size: 11px;
-    border-top: 1px dotted #a3b0bb;
+    border-top: 1px dotted #83B6FB;
 }
 .blog-summary-grid li.quotes .entry-summary { background: #007DFF }
 .blog-summary-grid li.quotes .entry-summary * { color: #fff }
 .blog-summary-grid li a.commentlink {
 	font-size: 11px;
 	clear:both;
-	border-bottom: 1px dotted #a3b0bb;
+	border-bottom: 1px dotted #83B6FB;
 	display:block;
 }
 .blog-summary-grid li h4 { clear: both }

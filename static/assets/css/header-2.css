@@ -278,7 +278,7 @@ nav.user a:hover {
 .primary_menu > li > a:focus,
 .primary_menu > .active > a,
 .primary_menu > li > a.selected,
-.primary_menu .parent > .active { background: #a3b0bb;}
+.primary_menu .parent > .active { background: #83B6FB;}
 
 /* sub levels */
 .primary_menu ul li a:hover,

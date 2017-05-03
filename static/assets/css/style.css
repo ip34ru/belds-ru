@@ -49,7 +49,7 @@ body {
 
 /*	Text Color
 ========================================================== */
-body, html, a { color: #576674 }
+body, html, a { color: #0500D1 }
 h1, h2, h3, h4, h5, h6, .slide-to-top .trigger { color: #007DFF }
 h1 a, h2 a, h3 a, h5 a, h4 a { color: inherit }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, .slide-to-top .trigger:hover { color: #0290b3 }
@@ -461,7 +461,7 @@ input[type="text"], input[type="password"], input[type="search"], input[type="em
     font-weight: 300;
     line-height: 1.2;
     margin:0;
-    color:#a3b0bb;
+    color:#83B6FB;
 }
 .hero-unit.center {
     text-align: center;
@@ -526,7 +526,7 @@ input[type="text"], input[type="password"], input[type="search"], input[type="em
     margin-bottom: 2%;
     position: relative;
 }
-.image-slider.flexslider .flex-direction-nav a:hover { background-color: #a3b0bb }
+.image-slider.flexslider .flex-direction-nav a:hover { background-color: #83B6FB }
 
 .image-slider.flexslider .flex-direction-nav a {
     position: absolute;
@@ -751,8 +751,8 @@ ul.blogposts span.date {
 	width:40px;
 	padding: 9px 0 0 0;
 	text-align: center;
-	-webkit-box-shadow: inset 2px 2px 0px 0px #a3b0bb;
-    box-shadow: inset 2px 2px 0px 0px #a3b0bb;
+	-webkit-box-shadow: inset 2px 2px 0px 0px #83B6FB;
+    box-shadow: inset 2px 2px 0px 0px #83B6FB;
 }
 ul.blogposts .date .day {
 	font-size: 13px;
@@ -822,7 +822,7 @@ ul.blogposts span.date .year {
   border: 1px solid #d8dfe5;
 }
 a.thumbnail:hover {
-  border-color: #a3b0bb;
+  border-color: #83B6FB;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
@@ -920,7 +920,7 @@ ul.image-widget {
 .footerPosts li:last-child { border: none }
 .footerPosts .meta {
     text-transform: uppercase;
-    color: #a3b0bb;
+    color: #83B6FB;
     display: block;
     font-size: 70%;
 }
@@ -932,7 +932,7 @@ ul.image-widget {
     clear: both;
     text-align: right;
     position:relative; /*ie fix*/
-    background: #576674;
+    background: #0500D1;
 }
 #footer .footerCredits ul {
     list-style: none;
@@ -944,7 +944,7 @@ ul.image-widget {
 #footer .footerCredits li {
     float: left;
     padding: 0 10px;
-    border-right: 1px solid #a3b0bb;
+    border-right: 1px solid #83B6FB;
 }
 #footer .footerCredits li:last-child,
 #footer .footerCredits .last { border: none }
@@ -986,7 +986,7 @@ ul.image-widget {
 ================================================== */
 
 .tooltip-inner {
-  color: #576674;
+  color: #0500D1;
   background-color: #d8dfe5;
 }
 .tooltip.top .tooltip-arrow {
@@ -1144,7 +1144,7 @@ ul.image-widget {
 }
 .sitemaplist a {
 	text-decoration:none;
-	border-bottom:1px dotted #a3b0bb;
+	border-bottom:1px dotted #83B6FB;
 }
 
 /*	testimonial page
@@ -1185,7 +1185,7 @@ ul.image-widget {
 .no-js .rotating-testimonials .tabs li { display: none }
 .rotating-testimonials .tabs li.active,
 .rotating-testimonials .tabs li:hover {
-    background: #a3b0bb;
+    background: #83B6FB;
     padding: 0px;
 }
 .rotating-testimonials .tabs li a {

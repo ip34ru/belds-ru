@@ -47,8 +47,8 @@ input.focused {
 .btn {
 		cursor: pointer;
 		color: #fff;
-		background: #a3b0bb;
-		border: 1px solid #a3b0bb;
+		background: #83B6FB;
+		border: 1px solid #83B6FB;
 }
 .btn:hover, .btn:active, .btn:focus, .btn.active, .btn.disabled, .btn[disabled] {
 		border-color: #8594a0;
@@ -118,8 +118,8 @@ input.focused {
 }
 .btn-inverse {
 		color: #fff;
-		background: #576674;
-		border-color: #576674;
+		background: #0500D1;
+		border-color: #0500D1;
 }
 .btn-inverse:hover, .btn-inverse:active, .btn-inverse:focus, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
 		color: #fff;
@@ -174,7 +174,7 @@ input.focused {
 		border: 1px solid #c7cfd6;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-		background-color: #a3b0bb;
+		background-color: #83B6FB;
 		color: #4c5966;
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
@@ -212,9 +212,9 @@ input.focused {
 
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-		color: #576674;
+		color: #0500D1;
 		text-decoration: none;
-		background-color: #a3b0bb;
+		background-color: #83B6FB;
 }
 
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
@@ -245,20 +245,20 @@ input.focused {
 		border-bottom-color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
-		border-top-color: #a3b0bb;
-		border-bottom-color: #a3b0bb;
+		border-top-color: #83B6FB;
+		border-bottom-color: #83B6FB;
 }
 .navbar-inverse .brand, .navbar-inverse .nav > li > a {
-		color: #a3b0bb;
+		color: #83B6FB;
 }
 .navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover {
 		color: #ffffff;
 }
 .navbar-inverse .brand {
-		color: #a3b0bb;
+		color: #83B6FB;
 }
 .navbar-inverse .navbar-text {
-		color: #a3b0bb;
+		color: #83B6FB;
 }
 .navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover {
 		background-color: transparent;
@@ -269,14 +269,14 @@ input.focused {
 		background-color: #4c5966;
 }
 .navbar-inverse .navbar-link {
-		color: #a3b0bb;
+		color: #83B6FB;
 }
 .navbar-inverse .navbar-link:hover {
 		color: #ffffff;
 }
 .navbar-inverse .navbar-inner {
-		background-color: #576674;
-		border-color: #576674;
+		background-color: #0500D1;
+		border-color: #0500D1;
 }
 .nav-list > .active > a, .nav-list > .active > a:hover {
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
@@ -353,7 +353,7 @@ button.close {
 		background-image: url(../images/7p.png);
 		background-repeat: repeat;
 		border-color: transparent;
-		color: #576674;
+		color: #0500D1;
 }
 .btn-very-subtle:hover {
 		background: #444;
@@ -459,7 +459,7 @@ label.error {
 		float: left
 }
 .pager.border {
-		border-top: 1px dotted #a3b0bb
+		border-top: 1px dotted #83B6FB
 }
 .pager.right {
 		text-align: right
@@ -468,7 +468,7 @@ label.error {
 		text-align: left
 }
 .pager li {
-		border-right: 1px dotted #a3b0bb
+		border-right: 1px dotted #83B6FB
 }
 .pager li:last-child {
 		padding-left: 14px;
